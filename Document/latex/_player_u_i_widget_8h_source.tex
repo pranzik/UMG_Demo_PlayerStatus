@@ -1,0 +1,61 @@
+\doxysection{Player\+UIWidget.\+h}
+\hypertarget{_player_u_i_widget_8h_source}{}\label{_player_u_i_widget_8h_source}\index{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/PlayerUIWidget.h@{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/PlayerUIWidget.h}}
+\mbox{\hyperlink{_player_u_i_widget_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Blueprint/UserWidget.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Components/Button.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <Components/ListView.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <Components/TextBlock.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_data_model_8h}{PlayerDataModel.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_b_u_i_inventory_entry_8h}{UBUIInventoryEntry.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_b_u_i_inventory_item_8h}{UBUIInventoryItem.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}PlayerUIWidget.generated.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ UCLASS()}
+\DoxyCodeLine{00020\ class\ MYPROJECT\_API\ \mbox{\hyperlink{class_u_player_u_i_widget}{UPlayerUIWidget}}\ :\ public\ UUserWidget}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_u_i_widget_a27f751be73eca70d64e01e63905501b7}{UpdatePlayerLists}}(TArray<FPlayerData>\&\ ConnectedPlayers,\ TArray<FPlayerData>\&\ DisconnectedPlayers);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_u_i_widget_a6723b9ea2b089589cdb00c5b25bd42ed}{Init}}(\mbox{\hyperlink{class_u_game_event_manager}{UGameEventManager}}*\ EventsManager);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_u_i_widget_ae0d60ff5e1a192c5530b7367fd95693a}{MoveElementBetweenScrollBoxes}}(\mbox{\hyperlink{struct_f_player_data}{FPlayerData}}*\ PlayerData);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget),\ BlueprintReadWrite)}
+\DoxyCodeLine{00045\ \ \ \ \ class\ UListView*\ \mbox{\hyperlink{class_u_player_u_i_widget_aca205b4143ff983009340ae96f1ad30a}{ConnectedPlayersList}};\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget),\ BlueprintReadWrite)}
+\DoxyCodeLine{00048\ \ \ \ \ class\ UListView*\ \mbox{\hyperlink{class_u_player_u_i_widget_a1ab15381107bcd62819ff5509f5cf5b8}{DisconnectedPlayersList}};\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ protected:}
+\DoxyCodeLine{00051\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_u_i_widget_af69976982faa9d312073ba8bf665086c}{NativeConstruct}}()\ override;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ private:}
+\DoxyCodeLine{00054\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ OnClickExpandConnectedPlayers();\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ OnClickExpandDisconnectedPlayers();\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00061\ \ \ \ \ TArray<\mbox{\hyperlink{class_u_b_u_i_inventory_item}{UBUIInventoryItem}}*>\ ConnectedInventory;\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00064\ \ \ \ \ TArray<\mbox{\hyperlink{class_u_b_u_i_inventory_item}{UBUIInventoryItem}}*>\ DisconnectedInventory;\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{class_u_game_event_manager}{UGameEventManager}}*\ EventManager;\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00070\ \ \ \ \ TArray<\mbox{\hyperlink{struct_f_player_data}{FPlayerData}}>\ ConnectedPlayers;\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00073\ \ \ \ \ TArray<\mbox{\hyperlink{struct_f_player_data}{FPlayerData}}>\ DisconnectedPlayers;\ }
+\DoxyCodeLine{00074\ \};}
+
+\end{DoxyCode}

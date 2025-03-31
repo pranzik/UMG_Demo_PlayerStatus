@@ -1,0 +1,40 @@
+\doxysection{Game\+Event\+Manager.\+h}
+\hypertarget{_game_event_manager_8h_source}{}\label{_game_event_manager_8h_source}\index{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/GameEventManager.h@{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/GameEventManager.h}}
+\mbox{\hyperlink{_game_event_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}UObject/NoExportTypes.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Engine/DataTable.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}GameEventManager.generated.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ Forward\ declaration\ of\ FPlayerData}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_f_player_data}{FPlayerData}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \mbox{\hyperlink{_game_event_manager_8h_a6140e7e96d84d7ecba012d8623088fe9}{DECLARE\_MULTICAST\_DELEGATE\_TwoParams}}(FOnPlayerDataEvent,\ TArray<FPlayerData>\&,\ TArray<FPlayerData>\&);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ \mbox{\hyperlink{_game_event_manager_8h_a0a60e6a996f13c6a892881e45fd80454}{DECLARE\_MULTICAST\_DELEGATE\_OneParam}}(FOnStatusChange,\ \mbox{\hyperlink{struct_f_player_data}{FPlayerData}}*);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \mbox{\hyperlink{_game_event_manager_8h_a0a60e6a996f13c6a892881e45fd80454}{DECLARE\_MULTICAST\_DELEGATE\_OneParam}}(FUIWidgetAdded,\ \textcolor{keyword}{class}\ \mbox{\hyperlink{class_u_player_u_i_widget}{UPlayerUIWidget}}*);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \mbox{\hyperlink{_game_event_manager_8h_a0a60e6a996f13c6a892881e45fd80454}{DECLARE\_MULTICAST\_DELEGATE\_OneParam}}(FActivateViewModels,\ \textcolor{keyword}{class}\ \mbox{\hyperlink{class_u_game_event_manager}{UGameEventManager}}*);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \mbox{\hyperlink{_game_event_manager_8h_a0a60e6a996f13c6a892881e45fd80454}{DECLARE\_MULTICAST\_DELEGATE\_OneParam}}(FActivateToast,\ \mbox{\hyperlink{struct_f_player_data}{FPlayerData}}*);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ UCLASS()}
+\DoxyCodeLine{00049\ class\ MYPROJECT\_API\ \mbox{\hyperlink{class_u_game_event_manager}{UGameEventManager}}\ :\ public\ UObject}
+\DoxyCodeLine{00050\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00054\ \ \ \ \ FOnPlayerDataEvent\ \mbox{\hyperlink{class_u_game_event_manager_ae45506f47520c5e116b93117601aeb45}{OnPlayerDataEvent}};\ }
+\DoxyCodeLine{00055\ \ \ \ \ FOnStatusChange\ \mbox{\hyperlink{class_u_game_event_manager_ae9009d6aadbea5bec431e15acaf8e983}{OnStatusChange}};\ }
+\DoxyCodeLine{00056\ \ \ \ \ FUIWidgetAdded\ \mbox{\hyperlink{class_u_game_event_manager_a2f8027ff69ef028e8708529cf528012e}{UIWidgetAdded}};\ }
+\DoxyCodeLine{00057\ \ \ \ \ FActivateViewModels\ \mbox{\hyperlink{class_u_game_event_manager_a16215ee425f9cc3f2696627afa6c1583}{ActivateViewModels}};\ }
+\DoxyCodeLine{00058\ \ \ \ \ FActivateToast\ \mbox{\hyperlink{class_u_game_event_manager_a64c13aa2b6d1688cbff976c8ec320ec2}{ActivateToast}};\ }
+\DoxyCodeLine{00059\ \};}
+
+\end{DoxyCode}

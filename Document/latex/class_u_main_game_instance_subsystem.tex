@@ -1,0 +1,115 @@
+\doxysection{UMain\+Game\+Instance\+Subsystem Class Reference}
+\hypertarget{class_u_main_game_instance_subsystem}{}\label{class_u_main_game_instance_subsystem}\index{UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}}
+
+
+Manages the game instance subsystem, including event management and player data.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Game\+Instance\+Subsystem.\+h$>$}
+
+
+
+Inheritance diagram for UMain\+Game\+Instance\+Subsystem\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_u_main_game_instance_subsystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UMain\+Game\+Instance\+Subsystem\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_main_game_instance_subsystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_main_game_instance_subsystem_a6a15639fcea53abc9221ed7f6aad0ec0}{Initialize}} (FSubsystem\+Collection\+Base \&Collection) override
+\begin{DoxyCompactList}\small\item\em Initializes the subsystem. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_u_main_game_instance_subsystem_a34e6a5cefbc7f989a57378d862dc9051}{Deinitialize}} () override
+\begin{DoxyCompactList}\small\item\em Deinitializes the subsystem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_main_game_instance_subsystem_a22db15f0908119889c5a96542637ba9a}{Event\+Manager}}
+\begin{DoxyCompactList}\small\item\em Manages game events. \end{DoxyCompactList}\item 
+UData\+Table \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_main_game_instance_subsystem_ad5e61db43e6ac95060738b0255770e77}{Data\+Table}}
+\begin{DoxyCompactList}\small\item\em The Data\+Table containing player data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_u_player_data_model}{UPlayer\+Data\+Model}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_main_game_instance_subsystem_ace2db8d96e8f82eb90f538ba6398f66d}{Player\+Data\+Model}}
+\begin{DoxyCompactList}\small\item\em Manages player data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the game instance subsystem, including event management and player data. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_main_game_instance_subsystem_a34e6a5cefbc7f989a57378d862dc9051}\index{UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}!Deinitialize@{Deinitialize}}
+\index{Deinitialize@{Deinitialize}!UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}}
+\doxysubsubsection{\texorpdfstring{Deinitialize()}{Deinitialize()}}
+{\footnotesize\ttfamily \label{class_u_main_game_instance_subsystem_a34e6a5cefbc7f989a57378d862dc9051} 
+void UMain\+Game\+Instance\+Subsystem\+::\+Deinitialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Deinitializes the subsystem. 
+
+\Hypertarget{class_u_main_game_instance_subsystem_a6a15639fcea53abc9221ed7f6aad0ec0}\index{UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily \label{class_u_main_game_instance_subsystem_a6a15639fcea53abc9221ed7f6aad0ec0} 
+void UMain\+Game\+Instance\+Subsystem\+::\+Initialize (\begin{DoxyParamCaption}\item[{FSubsystem\+Collection\+Base \&}]{Collection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the subsystem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collection} & The collection of subsystems. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_main_game_instance_subsystem_ad5e61db43e6ac95060738b0255770e77}\index{UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}!DataTable@{DataTable}}
+\index{DataTable@{DataTable}!UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}}
+\doxysubsubsection{\texorpdfstring{DataTable}{DataTable}}
+{\footnotesize\ttfamily \label{class_u_main_game_instance_subsystem_ad5e61db43e6ac95060738b0255770e77} 
+UData\+Table\texorpdfstring{$\ast$}{*} UMain\+Game\+Instance\+Subsystem\+::\+Data\+Table}
+
+
+
+The Data\+Table containing player data. 
+
+\Hypertarget{class_u_main_game_instance_subsystem_a22db15f0908119889c5a96542637ba9a}\index{UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}!EventManager@{EventManager}}
+\index{EventManager@{EventManager}!UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}}
+\doxysubsubsection{\texorpdfstring{EventManager}{EventManager}}
+{\footnotesize\ttfamily \label{class_u_main_game_instance_subsystem_a22db15f0908119889c5a96542637ba9a} 
+\mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}}\texorpdfstring{$\ast$}{*} UMain\+Game\+Instance\+Subsystem\+::\+Event\+Manager}
+
+
+
+Manages game events. 
+
+\Hypertarget{class_u_main_game_instance_subsystem_ace2db8d96e8f82eb90f538ba6398f66d}\index{UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}!PlayerDataModel@{PlayerDataModel}}
+\index{PlayerDataModel@{PlayerDataModel}!UMainGameInstanceSubsystem@{UMainGameInstanceSubsystem}}
+\doxysubsubsection{\texorpdfstring{PlayerDataModel}{PlayerDataModel}}
+{\footnotesize\ttfamily \label{class_u_main_game_instance_subsystem_ace2db8d96e8f82eb90f538ba6398f66d} 
+\mbox{\hyperlink{class_u_player_data_model}{UPlayer\+Data\+Model}}\texorpdfstring{$\ast$}{*} UMain\+Game\+Instance\+Subsystem\+::\+Player\+Data\+Model}
+
+
+
+Manages player data. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_main_game_instance_subsystem_8h}{Main\+Game\+Instance\+Subsystem.\+h}}\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_main_game_instance_subsystem_8cpp}{Main\+Game\+Instance\+Subsystem.\+cpp}}\end{DoxyCompactItemize}

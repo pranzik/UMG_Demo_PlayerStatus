@@ -1,0 +1,109 @@
+\doxysection{UUBUIInventory\+Entry Class Reference}
+\hypertarget{class_u_u_b_u_i_inventory_entry}{}\label{class_u_u_b_u_i_inventory_entry}\index{UUBUIInventoryEntry@{UUBUIInventoryEntry}}
+
+
+Represents an entry in the player inventory list.  
+
+
+
+
+{\ttfamily \#include $<$UBUIInventory\+Entry.\+h$>$}
+
+
+
+Inheritance diagram for UUBUIInventory\+Entry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{class_u_u_b_u_i_inventory_entry__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UUBUIInventory\+Entry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{class_u_u_b_u_i_inventory_entry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry_aa76f7fdc6a8dc3e0d3720e26c8a956c7}{Set\+Player\+Data}} (const \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \&New\+Data)
+\begin{DoxyCompactList}\small\item\em Sets the player data for this entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry_a4048c5891f3e8c4465e6ad310b8be66e}{Native\+On\+List\+Item\+Object\+Set}} (UObject \texorpdfstring{$\ast$}{*}List\+Item\+Object) override
+\item 
+void \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry_a777a9b39e122b0e37347705437488e8e}{On\+Data\+Recieved}} (const \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \&New\+Data)
+\begin{DoxyCompactList}\small\item\em Called when player data is received. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class UText\+Block \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry_aec43f904be9722f0ea5c42a75ab056f5}{Name\+Label}}
+\begin{DoxyCompactList}\small\item\em The label displaying the player\textquotesingle{}s name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an entry in the player inventory list. 
+
+This class displays player data in a list entry. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_u_b_u_i_inventory_entry_a4048c5891f3e8c4465e6ad310b8be66e}\index{UUBUIInventoryEntry@{UUBUIInventoryEntry}!NativeOnListItemObjectSet@{NativeOnListItemObjectSet}}
+\index{NativeOnListItemObjectSet@{NativeOnListItemObjectSet}!UUBUIInventoryEntry@{UUBUIInventoryEntry}}
+\doxysubsubsection{\texorpdfstring{NativeOnListItemObjectSet()}{NativeOnListItemObjectSet()}}
+{\footnotesize\ttfamily \label{class_u_u_b_u_i_inventory_entry_a4048c5891f3e8c4465e6ad310b8be66e} 
+void UUBUIInventory\+Entry\+::\+Native\+On\+List\+Item\+Object\+Set (\begin{DoxyParamCaption}\item[{UObject \texorpdfstring{$\ast$}{*}}]{List\+Item\+Object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_u_u_b_u_i_inventory_entry_a777a9b39e122b0e37347705437488e8e}\index{UUBUIInventoryEntry@{UUBUIInventoryEntry}!OnDataRecieved@{OnDataRecieved}}
+\index{OnDataRecieved@{OnDataRecieved}!UUBUIInventoryEntry@{UUBUIInventoryEntry}}
+\doxysubsubsection{\texorpdfstring{OnDataRecieved()}{OnDataRecieved()}}
+{\footnotesize\ttfamily \label{class_u_u_b_u_i_inventory_entry_a777a9b39e122b0e37347705437488e8e} 
+void UUBUIInventory\+Entry\+::\+On\+Data\+Recieved (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \&}]{New\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Called when player data is received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Data} & The player data. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_u_b_u_i_inventory_entry_aa76f7fdc6a8dc3e0d3720e26c8a956c7}\index{UUBUIInventoryEntry@{UUBUIInventoryEntry}!SetPlayerData@{SetPlayerData}}
+\index{SetPlayerData@{SetPlayerData}!UUBUIInventoryEntry@{UUBUIInventoryEntry}}
+\doxysubsubsection{\texorpdfstring{SetPlayerData()}{SetPlayerData()}}
+{\footnotesize\ttfamily \label{class_u_u_b_u_i_inventory_entry_aa76f7fdc6a8dc3e0d3720e26c8a956c7} 
+void UUBUIInventory\+Entry\+::\+Set\+Player\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \&}]{New\+Data}{}\end{DoxyParamCaption})}
+
+
+
+Sets the player data for this entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Data} & The player data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_u_b_u_i_inventory_entry_aec43f904be9722f0ea5c42a75ab056f5}\index{UUBUIInventoryEntry@{UUBUIInventoryEntry}!NameLabel@{NameLabel}}
+\index{NameLabel@{NameLabel}!UUBUIInventoryEntry@{UUBUIInventoryEntry}}
+\doxysubsubsection{\texorpdfstring{NameLabel}{NameLabel}}
+{\footnotesize\ttfamily \label{class_u_u_b_u_i_inventory_entry_aec43f904be9722f0ea5c42a75ab056f5} 
+class UText\+Block\texorpdfstring{$\ast$}{*} UUBUIInventory\+Entry\+::\+Name\+Label\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The label displaying the player\textquotesingle{}s name. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_u_b_u_i_inventory_entry_8h}{UBUIInventory\+Entry.\+h}}\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_u_b_u_i_inventory_entry_8cpp}{UBUIInventory\+Entry.\+cpp}}\end{DoxyCompactItemize}

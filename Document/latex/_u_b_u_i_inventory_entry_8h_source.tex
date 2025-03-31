@@ -1,0 +1,33 @@
+\doxysection{UBUIInventory\+Entry.\+h}
+\hypertarget{_u_b_u_i_inventory_entry_8h_source}{}\label{_u_b_u_i_inventory_entry_8h_source}\index{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/UBUIInventoryEntry.h@{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/UBUIInventoryEntry.h}}
+\mbox{\hyperlink{_u_b_u_i_inventory_entry_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Blueprint/UserWidget.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Blueprint/IUserObjectListEntry.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_b_u_i_inventory_item_8h}{UBUIInventoryItem.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}UBUIInventoryEntry.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ UCLASS()}
+\DoxyCodeLine{00016\ class\ MYPROJECT\_API\ \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry}{UUBUIInventoryEntry}}\ :\ public\ UUserWidget,\ public\ IUserObjectListEntry}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry_aa76f7fdc6a8dc3e0d3720e26c8a956c7}{SetPlayerData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_f_player_data}{FPlayerData}}\&\ NewData);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ IUserObjectListEntry}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry_a4048c5891f3e8c4465e6ad310b8be66e}{NativeOnListItemObjectSet}}(UObject*\ ListItemObject)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ IUserObjectListEntry}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00033\ \ \ \ \ class\ UTextBlock*\ \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry_aec43f904be9722f0ea5c42a75ab056f5}{NameLabel}};\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ UFUNCTION(BlueprintImplementableEvent,\ Category\ =\ \textcolor{stringliteral}{"{}Data"{}})}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_u_b_u_i_inventory_entry_a777a9b39e122b0e37347705437488e8e}{OnDataRecieved}}(const\ \mbox{\hyperlink{struct_f_player_data}{FPlayerData}}\&\ NewData);}
+\DoxyCodeLine{00041\ \};}
+
+\end{DoxyCode}

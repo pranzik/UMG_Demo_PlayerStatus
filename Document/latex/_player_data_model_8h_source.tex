@@ -1,0 +1,52 @@
+\doxysection{Player\+Data\+Model.\+h}
+\hypertarget{_player_data_model_8h_source}{}\label{_player_data_model_8h_source}\index{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/PlayerDataModel.h@{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/PlayerDataModel.h}}
+\mbox{\hyperlink{_player_data_model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}UObject/NoExportTypes.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_data_8h}{PlayerData.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Engine/AssetManager.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <Kismet/GameplayStatics.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_event_manager_8h}{GameEventManager.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}PlayerDataModel.generated.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00017\ UCLASS()}
+\DoxyCodeLine{00018\ class\ MYPROJECT\_API\ \mbox{\hyperlink{class_u_player_data_model_a01c1ed2c07199b99b4ccb113539e13bf}{UPlayerDataModel}}\ :\ public\ UObject}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_u_player_data_model_a01c1ed2c07199b99b4ccb113539e13bf}{UPlayerDataModel}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_data_model_ad7bd6f5665b39a137cc64e820a2a3f3e}{Initialize}}(UDataTable*\ DataTable,\ \mbox{\hyperlink{class_u_game_event_manager}{UGameEventManager}}*\ EventsManager);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_data_model_a86c57819d0a7977754ed23488c997d4e}{UpdatePlayerConnectionStatus}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_f_player_data}{FPlayerData}}\&\ Data);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_data_model_a23f9c75a5c07c76ed43c7a7d8bdaa541}{GetAllPlayers}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_data_model_a590408817d307321a9a4bffcbf2c176d}{GetObjectReferenceByPath}}(\textcolor{keyword}{const}\ FString\&\ AssetPath);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_player_data_model_a0f365a9eadbb60fc37d9ce911f6194e7}{GetPlayerConnectionStatus}}(\textcolor{keyword}{const}\ FString\&\ Nickname)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{struct_f_player_data}{FPlayerData}}\ \mbox{\hyperlink{class_u_player_data_model_ab80565f8e7079ef6f6d311d486b43925}{GetRandomPlayer}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_player_data_model_a118a62f0a4ac20d82e22fa4700203233}{OnTimerExpire}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_u_game_event_manager}{UGameEventManager}}*\ \mbox{\hyperlink{class_u_player_data_model_a5080470655007ea913f405e0fd55396d}{EventManager}};\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ UDataTable*\ \mbox{\hyperlink{class_u_player_data_model_ae3b5dd2bc0dbcd93a701651317d5ba81}{PlayerDataTable}};\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ private:}
+\DoxyCodeLine{00073\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00074\ \ \ \ \ TArray<\mbox{\hyperlink{struct_f_player_data}{FPlayerData}}>\ ConnectedPlayers;\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00077\ \ \ \ \ TArray<\mbox{\hyperlink{struct_f_player_data}{FPlayerData}}>\ DisconnectedPlayers;\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ FTimerHandle\ TimerHandle;\ }
+\DoxyCodeLine{00080\ \};}
+
+\end{DoxyCode}

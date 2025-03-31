@@ -1,0 +1,11 @@
+<map id="D:/UE_Exercise/UMG_Exercise_PratikPanzade/MyProject/Source/MyProject/PlayerData.h" name="D:/UE_Exercise/UMG_Exercise_PratikPanzade/MyProject/Source/MyProject/PlayerData.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="210,5,402,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,128,111,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,83,105,125,103,120,211,78"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,128,302,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,82,242,118,238,114,271,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="326,128,462,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="341,78,374,114,370,118,337,82"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="486,128,644,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="404,77,518,120,516,125,402,82"/>
+</map>

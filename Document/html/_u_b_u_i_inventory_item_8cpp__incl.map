@@ -1,0 +1,20 @@
+<map id="D:/UE_Exercise/UMG_Exercise_PratikPanzade/MyProject/Source/MyProject/UBUIInventoryItem.cpp" name="D:/UE_Exercise/UMG_Exercise_PratikPanzade/MyProject/Source/MyProject/UBUIInventoryItem.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="202,5,394,80"/>
+<area shape="rect" id="Node000002" href="$_u_b_u_i_inventory_item_8h.html" title=" " alt="" coords="225,128,371,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,80,301,112,295,112,295,80"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,277,111,304"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,158,211,178,159,205,117,236,82,268,79,264,114,232,157,200,209,173,259,153"/>
+<area shape="rect" id="Node000004" href="$_player_data_8h.html" title=" " alt="" coords="169,203,267,229"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="286,157,245,194,241,190,282,153"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="291,203,465,229"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="314,153,355,190,351,194,310,157"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="490,203,696,229"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="350,153,527,196,526,201,349,158"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="191,232,101,273,99,268,189,227"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="134,277,302,304"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="221,230,221,262,215,262,215,230"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="326,277,462,304"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="250,227,350,268,348,273,248,232"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="486,277,644,304"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="268,225,490,271,489,276,267,230"/>
+</map>

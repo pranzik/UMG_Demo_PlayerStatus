@@ -1,0 +1,118 @@
+\doxysection{D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\+Game\+Event\+Manager.h File Reference}
+\hypertarget{_game_event_manager_8h}{}\label{_game_event_manager_8h}\index{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/GameEventManager.h@{D:/UE\_Exercise/UMG\_Exercise\_PratikPanzade/MyProject/Source/MyProject/GameEventManager.h}}
+{\ttfamily \#include "{}Core\+Minimal.\+h"{}}\newline
+{\ttfamily \#include "{}UObject/\+No\+Export\+Types.\+h"{}}\newline
+{\ttfamily \#include "{}Engine/\+Data\+Table.\+h"{}}\newline
+{\ttfamily \#include "{}Game\+Event\+Manager.\+generated.\+h"{}}\newline
+Include dependency graph for Game\+Event\+Manager.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_event_manager_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_event_manager_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}}
+\begin{DoxyCompactList}\small\item\em Manages game events and delegates for player data, UI, and toast notifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_event_manager_8h_a6140e7e96d84d7ecba012d8623088fe9}{DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+Two\+Params}} (FOn\+Player\+Data\+Event, TArray$<$ \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} $>$ \&, TArray$<$ \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Delegate for broadcasting player data events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_game_event_manager_8h_a0a60e6a996f13c6a892881e45fd80454}{DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+One\+Param}} (FOn\+Status\+Change, \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Delegate for broadcasting player status changes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_game_event_manager_8h_abb9ba8e2ab77a1bc70bbddf3f37bf7a1}{DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+One\+Param}} (FUIWidget\+Added, class \mbox{\hyperlink{class_u_player_u_i_widget}{UPlayer\+UIWidget}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Delegate for notifying when a UI widget is added. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_game_event_manager_8h_a6bbb37f9c0939526998b4b4fe4450eb2}{DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+One\+Param}} (FActivate\+View\+Models, class \mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Delegate for activating view models. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_game_event_manager_8h_a022e9f95f6d0ce09dc97f502bdb817c2}{DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+One\+Param}} (FActivate\+Toast, \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Delegate for activating toast notifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_game_event_manager_8h_a022e9f95f6d0ce09dc97f502bdb817c2}\index{GameEventManager.h@{GameEventManager.h}!DECLARE\_MULTICAST\_DELEGATE\_OneParam@{DECLARE\_MULTICAST\_DELEGATE\_OneParam}}
+\index{DECLARE\_MULTICAST\_DELEGATE\_OneParam@{DECLARE\_MULTICAST\_DELEGATE\_OneParam}!GameEventManager.h@{GameEventManager.h}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_MULTICAST\_DELEGATE\_OneParam()}{DECLARE\_MULTICAST\_DELEGATE\_OneParam()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{_game_event_manager_8h_a022e9f95f6d0ce09dc97f502bdb817c2} 
+DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+One\+Param (\begin{DoxyParamCaption}\item[{FActivate\+Toast}]{}{, }\item[{\mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})}
+
+
+
+Delegate for activating toast notifications. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Data} & The player data to display in the toast. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_game_event_manager_8h_a6bbb37f9c0939526998b4b4fe4450eb2}\index{GameEventManager.h@{GameEventManager.h}!DECLARE\_MULTICAST\_DELEGATE\_OneParam@{DECLARE\_MULTICAST\_DELEGATE\_OneParam}}
+\index{DECLARE\_MULTICAST\_DELEGATE\_OneParam@{DECLARE\_MULTICAST\_DELEGATE\_OneParam}!GameEventManager.h@{GameEventManager.h}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_MULTICAST\_DELEGATE\_OneParam()}{DECLARE\_MULTICAST\_DELEGATE\_OneParam()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{_game_event_manager_8h_a6bbb37f9c0939526998b4b4fe4450eb2} 
+DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+One\+Param (\begin{DoxyParamCaption}\item[{FActivate\+View\+Models}]{}{, }\item[{class \mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})}
+
+
+
+Delegate for activating view models. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Event\+Manager} & The event manager to use for activation. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_game_event_manager_8h_a0a60e6a996f13c6a892881e45fd80454}\index{GameEventManager.h@{GameEventManager.h}!DECLARE\_MULTICAST\_DELEGATE\_OneParam@{DECLARE\_MULTICAST\_DELEGATE\_OneParam}}
+\index{DECLARE\_MULTICAST\_DELEGATE\_OneParam@{DECLARE\_MULTICAST\_DELEGATE\_OneParam}!GameEventManager.h@{GameEventManager.h}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_MULTICAST\_DELEGATE\_OneParam()}{DECLARE\_MULTICAST\_DELEGATE\_OneParam()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{_game_event_manager_8h_a0a60e6a996f13c6a892881e45fd80454} 
+DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+One\+Param (\begin{DoxyParamCaption}\item[{FOn\+Status\+Change}]{}{, }\item[{\mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})}
+
+
+
+Delegate for broadcasting player status changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Data} & The player data whose status changed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_game_event_manager_8h_abb9ba8e2ab77a1bc70bbddf3f37bf7a1}\index{GameEventManager.h@{GameEventManager.h}!DECLARE\_MULTICAST\_DELEGATE\_OneParam@{DECLARE\_MULTICAST\_DELEGATE\_OneParam}}
+\index{DECLARE\_MULTICAST\_DELEGATE\_OneParam@{DECLARE\_MULTICAST\_DELEGATE\_OneParam}!GameEventManager.h@{GameEventManager.h}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_MULTICAST\_DELEGATE\_OneParam()}{DECLARE\_MULTICAST\_DELEGATE\_OneParam()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{_game_event_manager_8h_abb9ba8e2ab77a1bc70bbddf3f37bf7a1} 
+DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+One\+Param (\begin{DoxyParamCaption}\item[{FUIWidget\+Added}]{}{, }\item[{class \mbox{\hyperlink{class_u_player_u_i_widget}{UPlayer\+UIWidget}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})}
+
+
+
+Delegate for notifying when a UI widget is added. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Widget} & The UI widget that was added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_game_event_manager_8h_a6140e7e96d84d7ecba012d8623088fe9}\index{GameEventManager.h@{GameEventManager.h}!DECLARE\_MULTICAST\_DELEGATE\_TwoParams@{DECLARE\_MULTICAST\_DELEGATE\_TwoParams}}
+\index{DECLARE\_MULTICAST\_DELEGATE\_TwoParams@{DECLARE\_MULTICAST\_DELEGATE\_TwoParams}!GameEventManager.h@{GameEventManager.h}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_MULTICAST\_DELEGATE\_TwoParams()}{DECLARE\_MULTICAST\_DELEGATE\_TwoParams()}}
+{\footnotesize\ttfamily \label{_game_event_manager_8h_a6140e7e96d84d7ecba012d8623088fe9} 
+DECLARE\+\_\+\+MULTICAST\+\_\+\+DELEGATE\+\_\+\+Two\+Params (\begin{DoxyParamCaption}\item[{FOn\+Player\+Data\+Event}]{}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} $>$ \&}]{}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} $>$ \&}]{}{}\end{DoxyParamCaption})}
+
+
+
+Delegate for broadcasting player data events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Connected\+Players} & List of connected players. \\
+\hline
+{\em Disconnected\+Players} & List of disconnected players. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,199 @@
+\doxysection{UPlayer\+Data\+Model Class Reference}
+\hypertarget{class_u_player_data_model}{}\label{class_u_player_data_model}\index{UPlayerDataModel@{UPlayerDataModel}}
+
+
+Manages player data and connection status using a Data\+Table.  
+
+
+
+
+{\ttfamily \#include $<$Player\+Data\+Model.\+h$>$}
+
+
+
+Inheritance diagram for UPlayer\+Data\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_u_player_data_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UPlayer\+Data\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{class_u_player_data_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_player_data_model_a01c1ed2c07199b99b4ccb113539e13bf}{UPlayer\+Data\+Model}} ()
+\item 
+void \mbox{\hyperlink{class_u_player_data_model_ad7bd6f5665b39a137cc64e820a2a3f3e}{Initialize}} (UData\+Table \texorpdfstring{$\ast$}{*}Data\+Table, \mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}} \texorpdfstring{$\ast$}{*}Events\+Manager)
+\begin{DoxyCompactList}\small\item\em Initializes the Player\+Data\+Model with a Data\+Table and Event\+Manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_player_data_model_a86c57819d0a7977754ed23488c997d4e}{Update\+Player\+Connection\+Status}} (const \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \&Data)
+\begin{DoxyCompactList}\small\item\em Updates the connection status of a player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_player_data_model_a23f9c75a5c07c76ed43c7a7d8bdaa541}{Get\+All\+Players}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all players from the Data\+Table and categorizes them as connected or disconnected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_player_data_model_a590408817d307321a9a4bffcbf2c176d}{Get\+Object\+Reference\+By\+Path}} (const FString \&Asset\+Path)
+\begin{DoxyCompactList}\small\item\em Retrieves an object reference by its asset path. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_u_player_data_model_a0f365a9eadbb60fc37d9ce911f6194e7}{Get\+Player\+Connection\+Status}} (const FString \&Nickname) const
+\begin{DoxyCompactList}\small\item\em Gets the connection status of a player by their nickname. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \mbox{\hyperlink{class_u_player_data_model_ab80565f8e7079ef6f6d311d486b43925}{Get\+Random\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves a random player from the connected or disconnected list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_player_data_model_a118a62f0a4ac20d82e22fa4700203233}{On\+Timer\+Expire}} ()
+\begin{DoxyCompactList}\small\item\em Called when a timer expires to update player status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_player_data_model_a5080470655007ea913f405e0fd55396d}{Event\+Manager}}
+\begin{DoxyCompactList}\small\item\em Manages game events. \end{DoxyCompactList}\item 
+UData\+Table \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_player_data_model_ae3b5dd2bc0dbcd93a701651317d5ba81}{Player\+Data\+Table}}
+\begin{DoxyCompactList}\small\item\em The Data\+Table containing player data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages player data and connection status using a Data\+Table. 
+
+This class handles player data, including connection status, and provides methods to interact with the data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_u_player_data_model_a01c1ed2c07199b99b4ccb113539e13bf}\index{UPlayerDataModel@{UPlayerDataModel}!UPlayerDataModel@{UPlayerDataModel}}
+\index{UPlayerDataModel@{UPlayerDataModel}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{UPlayerDataModel()}{UPlayerDataModel()}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_a01c1ed2c07199b99b4ccb113539e13bf} 
+UPlayer\+Data\+Model\+::\+UPlayer\+Data\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_player_data_model_a23f9c75a5c07c76ed43c7a7d8bdaa541}\index{UPlayerDataModel@{UPlayerDataModel}!GetAllPlayers@{GetAllPlayers}}
+\index{GetAllPlayers@{GetAllPlayers}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{GetAllPlayers()}{GetAllPlayers()}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_a23f9c75a5c07c76ed43c7a7d8bdaa541} 
+void UPlayer\+Data\+Model\+::\+Get\+All\+Players (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves all players from the Data\+Table and categorizes them as connected or disconnected. 
+
+\Hypertarget{class_u_player_data_model_a590408817d307321a9a4bffcbf2c176d}\index{UPlayerDataModel@{UPlayerDataModel}!GetObjectReferenceByPath@{GetObjectReferenceByPath}}
+\index{GetObjectReferenceByPath@{GetObjectReferenceByPath}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{GetObjectReferenceByPath()}{GetObjectReferenceByPath()}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_a590408817d307321a9a4bffcbf2c176d} 
+void UPlayer\+Data\+Model\+::\+Get\+Object\+Reference\+By\+Path (\begin{DoxyParamCaption}\item[{const FString \&}]{Asset\+Path}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves an object reference by its asset path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Asset\+Path} & The path to the asset. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_player_data_model_a0f365a9eadbb60fc37d9ce911f6194e7}\index{UPlayerDataModel@{UPlayerDataModel}!GetPlayerConnectionStatus@{GetPlayerConnectionStatus}}
+\index{GetPlayerConnectionStatus@{GetPlayerConnectionStatus}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{GetPlayerConnectionStatus()}{GetPlayerConnectionStatus()}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_a0f365a9eadbb60fc37d9ce911f6194e7} 
+bool UPlayer\+Data\+Model\+::\+Get\+Player\+Connection\+Status (\begin{DoxyParamCaption}\item[{const FString \&}]{Nickname}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the connection status of a player by their nickname. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nickname} & The nickname of the player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player is connected, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_u_player_data_model_ab80565f8e7079ef6f6d311d486b43925}\index{UPlayerDataModel@{UPlayerDataModel}!GetRandomPlayer@{GetRandomPlayer}}
+\index{GetRandomPlayer@{GetRandomPlayer}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{GetRandomPlayer()}{GetRandomPlayer()}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_ab80565f8e7079ef6f6d311d486b43925} 
+\mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} UPlayer\+Data\+Model\+::\+Get\+Random\+Player (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves a random player from the connected or disconnected list. 
+
+\begin{DoxyReturn}{Returns}
+A random player\textquotesingle{}s data. 
+\end{DoxyReturn}
+\Hypertarget{class_u_player_data_model_ad7bd6f5665b39a137cc64e820a2a3f3e}\index{UPlayerDataModel@{UPlayerDataModel}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_ad7bd6f5665b39a137cc64e820a2a3f3e} 
+void UPlayer\+Data\+Model\+::\+Initialize (\begin{DoxyParamCaption}\item[{UData\+Table \texorpdfstring{$\ast$}{*}}]{Data\+Table}{, }\item[{\mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}} \texorpdfstring{$\ast$}{*}}]{Events\+Manager}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the Player\+Data\+Model with a Data\+Table and Event\+Manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Table} & The Data\+Table containing player data. \\
+\hline
+{\em Events\+Manager} & The Event\+Manager to handle game events. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_player_data_model_a118a62f0a4ac20d82e22fa4700203233}\index{UPlayerDataModel@{UPlayerDataModel}!OnTimerExpire@{OnTimerExpire}}
+\index{OnTimerExpire@{OnTimerExpire}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{OnTimerExpire()}{OnTimerExpire()}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_a118a62f0a4ac20d82e22fa4700203233} 
+void UPlayer\+Data\+Model\+::\+On\+Timer\+Expire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Called when a timer expires to update player status. 
+
+\Hypertarget{class_u_player_data_model_a86c57819d0a7977754ed23488c997d4e}\index{UPlayerDataModel@{UPlayerDataModel}!UpdatePlayerConnectionStatus@{UpdatePlayerConnectionStatus}}
+\index{UpdatePlayerConnectionStatus@{UpdatePlayerConnectionStatus}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{UpdatePlayerConnectionStatus()}{UpdatePlayerConnectionStatus()}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_a86c57819d0a7977754ed23488c997d4e} 
+void UPlayer\+Data\+Model\+::\+Update\+Player\+Connection\+Status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \&}]{Data}{}\end{DoxyParamCaption})}
+
+
+
+Updates the connection status of a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data} & The player data to update. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_player_data_model_a5080470655007ea913f405e0fd55396d}\index{UPlayerDataModel@{UPlayerDataModel}!EventManager@{EventManager}}
+\index{EventManager@{EventManager}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{EventManager}{EventManager}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_a5080470655007ea913f405e0fd55396d} 
+\mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}}\texorpdfstring{$\ast$}{*} UPlayer\+Data\+Model\+::\+Event\+Manager}
+
+
+
+Manages game events. 
+
+\Hypertarget{class_u_player_data_model_ae3b5dd2bc0dbcd93a701651317d5ba81}\index{UPlayerDataModel@{UPlayerDataModel}!PlayerDataTable@{PlayerDataTable}}
+\index{PlayerDataTable@{PlayerDataTable}!UPlayerDataModel@{UPlayerDataModel}}
+\doxysubsubsection{\texorpdfstring{PlayerDataTable}{PlayerDataTable}}
+{\footnotesize\ttfamily \label{class_u_player_data_model_ae3b5dd2bc0dbcd93a701651317d5ba81} 
+UData\+Table\texorpdfstring{$\ast$}{*} UPlayer\+Data\+Model\+::\+Player\+Data\+Table}
+
+
+
+The Data\+Table containing player data. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_player_data_model_8h}{Player\+Data\+Model.\+h}}\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_player_data_model_8cpp}{Player\+Data\+Model.\+cpp}}\end{DoxyCompactItemize}

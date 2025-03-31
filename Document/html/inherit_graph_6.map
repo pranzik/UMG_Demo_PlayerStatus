@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,81,75,108"/>
+<area shape="rect" id="Node000001" href="$class_u_b_u_i_inventory_item.html" title="Represents an inventory item for a player." alt="" coords="131,5,265,32"/>
+<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="72,70,121,42,150,30,152,35,124,46,74,75"/>
+<area shape="rect" id="Node000002" href="$class_u_game_event_manager.html" title="Manages game events and delegates for player data, UI, and toast notifications." alt="" coords="123,56,273,83"/>
+<area shape="poly" id="edge10_Node000000_Node000002" title=" " alt="" coords="89,84,122,79,123,84,90,89"/>
+<area shape="rect" id="Node000003" href="$class_u_player_data_model.html" title="Manages player data and connection status using a DataTable." alt="" coords="132,107,264,133"/>
+<area shape="poly" id="edge11_Node000000_Node000003" title=" " alt="" coords="90,100,132,107,131,112,89,105"/>
+<area shape="rect" id="Node000004" href="$class_u_view_models.html" title="Manages the view models for the UI." alt="" coords="147,157,249,184"/>
+<area shape="poly" id="edge12_Node000000_Node000004" title=" " alt="" coords="74,114,124,143,152,154,150,159,121,148,72,119"/>
+</map>

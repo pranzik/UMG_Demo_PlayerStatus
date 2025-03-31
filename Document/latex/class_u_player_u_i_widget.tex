@@ -1,0 +1,140 @@
+\doxysection{UPlayer\+UIWidget Class Reference}
+\hypertarget{class_u_player_u_i_widget}{}\label{class_u_player_u_i_widget}\index{UPlayerUIWidget@{UPlayerUIWidget}}
+
+
+The main UI widget for displaying player data.  
+
+
+
+
+{\ttfamily \#include $<$Player\+UIWidget.\+h$>$}
+
+
+
+Inheritance diagram for UPlayer\+UIWidget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_u_player_u_i_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UPlayer\+UIWidget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_u_player_u_i_widget__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_player_u_i_widget_a27f751be73eca70d64e01e63905501b7}{Update\+Player\+Lists}} (TArray$<$ \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} $>$ \&Connected\+Players, TArray$<$ \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} $>$ \&Disconnected\+Players)
+\begin{DoxyCompactList}\small\item\em Updates the player lists in the UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_player_u_i_widget_a6723b9ea2b089589cdb00c5b25bd42ed}{Init}} (\mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}} \texorpdfstring{$\ast$}{*}Events\+Manager)
+\begin{DoxyCompactList}\small\item\em Initializes the widget with the Event\+Manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_player_u_i_widget_ae0d60ff5e1a192c5530b7367fd95693a}{Move\+Element\+Between\+Scroll\+Boxes}} (\mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \texorpdfstring{$\ast$}{*}Player\+Data)
+\begin{DoxyCompactList}\small\item\em Moves a player element between connected and disconnected lists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class UList\+View \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_player_u_i_widget_aca205b4143ff983009340ae96f1ad30a}{Connected\+Players\+List}}
+\begin{DoxyCompactList}\small\item\em List of connected players. \end{DoxyCompactList}\item 
+class UList\+View \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_player_u_i_widget_a1ab15381107bcd62819ff5509f5cf5b8}{Disconnected\+Players\+List}}
+\begin{DoxyCompactList}\small\item\em List of disconnected players. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_player_u_i_widget_af69976982faa9d312073ba8bf665086c}{Native\+Construct}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main UI widget for displaying player data. 
+
+This widget displays connected and disconnected players and allows interaction with their data. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_player_u_i_widget_a6723b9ea2b089589cdb00c5b25bd42ed}\index{UPlayerUIWidget@{UPlayerUIWidget}!Init@{Init}}
+\index{Init@{Init}!UPlayerUIWidget@{UPlayerUIWidget}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{class_u_player_u_i_widget_a6723b9ea2b089589cdb00c5b25bd42ed} 
+void UPlayer\+UIWidget\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_u_game_event_manager}{UGame\+Event\+Manager}} \texorpdfstring{$\ast$}{*}}]{Events\+Manager}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the widget with the Event\+Manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Events\+Manager} & The Event\+Manager to handle game events. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_player_u_i_widget_ae0d60ff5e1a192c5530b7367fd95693a}\index{UPlayerUIWidget@{UPlayerUIWidget}!MoveElementBetweenScrollBoxes@{MoveElementBetweenScrollBoxes}}
+\index{MoveElementBetweenScrollBoxes@{MoveElementBetweenScrollBoxes}!UPlayerUIWidget@{UPlayerUIWidget}}
+\doxysubsubsection{\texorpdfstring{MoveElementBetweenScrollBoxes()}{MoveElementBetweenScrollBoxes()}}
+{\footnotesize\ttfamily \label{class_u_player_u_i_widget_ae0d60ff5e1a192c5530b7367fd95693a} 
+void UPlayer\+UIWidget\+::\+Move\+Element\+Between\+Scroll\+Boxes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \texorpdfstring{$\ast$}{*}}]{Player\+Data}{}\end{DoxyParamCaption})}
+
+
+
+Moves a player element between connected and disconnected lists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Data} & The player data to move. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_player_u_i_widget_af69976982faa9d312073ba8bf665086c}\index{UPlayerUIWidget@{UPlayerUIWidget}!NativeConstruct@{NativeConstruct}}
+\index{NativeConstruct@{NativeConstruct}!UPlayerUIWidget@{UPlayerUIWidget}}
+\doxysubsubsection{\texorpdfstring{NativeConstruct()}{NativeConstruct()}}
+{\footnotesize\ttfamily \label{class_u_player_u_i_widget_af69976982faa9d312073ba8bf665086c} 
+void UPlayer\+UIWidget\+::\+Native\+Construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_u_player_u_i_widget_a27f751be73eca70d64e01e63905501b7}\index{UPlayerUIWidget@{UPlayerUIWidget}!UpdatePlayerLists@{UpdatePlayerLists}}
+\index{UpdatePlayerLists@{UpdatePlayerLists}!UPlayerUIWidget@{UPlayerUIWidget}}
+\doxysubsubsection{\texorpdfstring{UpdatePlayerLists()}{UpdatePlayerLists()}}
+{\footnotesize\ttfamily \label{class_u_player_u_i_widget_a27f751be73eca70d64e01e63905501b7} 
+void UPlayer\+UIWidget\+::\+Update\+Player\+Lists (\begin{DoxyParamCaption}\item[{TArray$<$ \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} $>$ \&}]{Connected\+Players}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} $>$ \&}]{Disconnected\+Players}{}\end{DoxyParamCaption})}
+
+
+
+Updates the player lists in the UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Connected\+Players} & List of connected players. \\
+\hline
+{\em Disconnected\+Players} & List of disconnected players. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_player_u_i_widget_aca205b4143ff983009340ae96f1ad30a}\index{UPlayerUIWidget@{UPlayerUIWidget}!ConnectedPlayersList@{ConnectedPlayersList}}
+\index{ConnectedPlayersList@{ConnectedPlayersList}!UPlayerUIWidget@{UPlayerUIWidget}}
+\doxysubsubsection{\texorpdfstring{ConnectedPlayersList}{ConnectedPlayersList}}
+{\footnotesize\ttfamily \label{class_u_player_u_i_widget_aca205b4143ff983009340ae96f1ad30a} 
+class UList\+View\texorpdfstring{$\ast$}{*} UPlayer\+UIWidget\+::\+Connected\+Players\+List}
+
+
+
+List of connected players. 
+
+\Hypertarget{class_u_player_u_i_widget_a1ab15381107bcd62819ff5509f5cf5b8}\index{UPlayerUIWidget@{UPlayerUIWidget}!DisconnectedPlayersList@{DisconnectedPlayersList}}
+\index{DisconnectedPlayersList@{DisconnectedPlayersList}!UPlayerUIWidget@{UPlayerUIWidget}}
+\doxysubsubsection{\texorpdfstring{DisconnectedPlayersList}{DisconnectedPlayersList}}
+{\footnotesize\ttfamily \label{class_u_player_u_i_widget_a1ab15381107bcd62819ff5509f5cf5b8} 
+class UList\+View\texorpdfstring{$\ast$}{*} UPlayer\+UIWidget\+::\+Disconnected\+Players\+List}
+
+
+
+List of disconnected players. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_player_u_i_widget_8h}{Player\+UIWidget.\+h}}\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_player_u_i_widget_8cpp}{Player\+UIWidget.\+cpp}}\end{DoxyCompactItemize}

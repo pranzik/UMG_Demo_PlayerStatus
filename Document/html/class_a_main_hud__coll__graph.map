@@ -1,0 +1,9 @@
+<map id="AMainHud" name="AMainHud">
+<area shape="rect" id="Node000001" title="The main HUD class for the game." alt="" coords="16,172,98,199"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,66,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,123,56,171,51,172,39,124"/>
+<area shape="rect" id="Node000003" href="$class_u_player_u_i_widget.html" title="The main UI widget for displaying player data." alt="" coords="90,81,213,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,121,72,173,69,169,125,117"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="101,5,202,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="154,47,154,81,149,81,149,47"/>
+</map>

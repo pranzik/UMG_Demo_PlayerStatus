@@ -1,0 +1,7 @@
+<map id="UUBUIInventoryEntry" name="UUBUIInventoryEntry">
+<area shape="rect" id="Node000001" title="Represents an entry in the player inventory list." alt="" coords="53,80,202,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,106,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,41,117,78,113,81,77,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="129,5,272,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,45,142,82,138,78,175,41"/>
+</map>

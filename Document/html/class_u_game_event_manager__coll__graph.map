@@ -1,0 +1,5 @@
+<map id="UGameEventManager" name="UGameEventManager">
+<area shape="rect" id="Node000001" title="Manages game events and delegates for player data, UI, and toast notifications." alt="" coords="5,80,156,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="46,5,115,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,48,83,80,78,80,78,48"/>
+</map>

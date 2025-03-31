@@ -1,0 +1,140 @@
+\doxysection{UToast\+Popup\+MVVMView\+Model\+Base Class Reference}
+\hypertarget{class_u_toast_popup_m_v_v_m_view_model_base}{}\label{class_u_toast_popup_m_v_v_m_view_model_base}\index{UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}}
+
+
+View\+Model for the toast popup UI.  
+
+
+
+
+{\ttfamily \#include $<$Toast\+Popup\+MVVMView\+Model\+Base.\+h$>$}
+
+
+
+Inheritance diagram for UToast\+Popup\+MVVMView\+Model\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_u_toast_popup_m_v_v_m_view_model_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UToast\+Popup\+MVVMView\+Model\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_u_toast_popup_m_v_v_m_view_model_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_toast_popup_m_v_v_m_view_model_base_a4a545a7f5d5c6bf2debee436d858913e}{UToast\+Popup\+MVVMView\+Model\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the View\+Model. \end{DoxyCompactList}\item 
+FText \mbox{\hyperlink{class_u_toast_popup_m_v_v_m_view_model_base_a357f7828c48e30159647486f7b9aaec3}{Get\+Player\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the player name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_toast_popup_m_v_v_m_view_model_base_a9b899ebf1fdf057111f1308a499ad539}{Set\+Player\+Name}} (const FText \&player\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the player name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_toast_popup_m_v_v_m_view_model_base_ac0bc92d0d9bb8ab704408e3ec2a4df5a}{Recieve\+Struct}} (\mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \texorpdfstring{$\ast$}{*}struct\+Data)
+\begin{DoxyCompactList}\small\item\em Receives player data and updates the toast message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+FText \mbox{\hyperlink{class_u_toast_popup_m_v_v_m_view_model_base_a62c0b9d284ee0e5702fad5baec86a166}{Player\+Name}}
+\begin{DoxyCompactList}\small\item\em The player name to display in the toast. \end{DoxyCompactList}\item 
+FTrigger\+Notification \mbox{\hyperlink{class_u_toast_popup_m_v_v_m_view_model_base_a0ae9b8a813b76c38f086da933e72dc49}{Trigger\+Notification}}
+\begin{DoxyCompactList}\small\item\em Delegate to trigger notifications in the UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+View\+Model for the toast popup UI. 
+
+This class manages the data and events for the toast popup. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_u_toast_popup_m_v_v_m_view_model_base_a4a545a7f5d5c6bf2debee436d858913e}\index{UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}!UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}}
+\index{UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}!UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}}
+\doxysubsubsection{\texorpdfstring{UToastPopupMVVMViewModelBase()}{UToastPopupMVVMViewModelBase()}}
+{\footnotesize\ttfamily \label{class_u_toast_popup_m_v_v_m_view_model_base_a4a545a7f5d5c6bf2debee436d858913e} 
+UToast\+Popup\+MVVMView\+Model\+Base\+::\+UToast\+Popup\+MVVMView\+Model\+Base (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the View\+Model. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_toast_popup_m_v_v_m_view_model_base_a357f7828c48e30159647486f7b9aaec3}\index{UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}!GetPlayerName@{GetPlayerName}}
+\index{GetPlayerName@{GetPlayerName}!UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}}
+\doxysubsubsection{\texorpdfstring{GetPlayerName()}{GetPlayerName()}}
+{\footnotesize\ttfamily \label{class_u_toast_popup_m_v_v_m_view_model_base_a357f7828c48e30159647486f7b9aaec3} 
+FText UToast\+Popup\+MVVMView\+Model\+Base\+::\+Get\+Player\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the player name. 
+
+\begin{DoxyReturn}{Returns}
+The player name as an FText. 
+\end{DoxyReturn}
+\Hypertarget{class_u_toast_popup_m_v_v_m_view_model_base_ac0bc92d0d9bb8ab704408e3ec2a4df5a}\index{UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}!RecieveStruct@{RecieveStruct}}
+\index{RecieveStruct@{RecieveStruct}!UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}}
+\doxysubsubsection{\texorpdfstring{RecieveStruct()}{RecieveStruct()}}
+{\footnotesize\ttfamily \label{class_u_toast_popup_m_v_v_m_view_model_base_ac0bc92d0d9bb8ab704408e3ec2a4df5a} 
+void UToast\+Popup\+MVVMView\+Model\+Base\+::\+Recieve\+Struct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_f_player_data}{FPlayer\+Data}} \texorpdfstring{$\ast$}{*}}]{struct\+Data}{}\end{DoxyParamCaption})}
+
+
+
+Receives player data and updates the toast message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct\+Data} & The player data to process. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_toast_popup_m_v_v_m_view_model_base_a9b899ebf1fdf057111f1308a499ad539}\index{UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}!SetPlayerName@{SetPlayerName}}
+\index{SetPlayerName@{SetPlayerName}!UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}}
+\doxysubsubsection{\texorpdfstring{SetPlayerName()}{SetPlayerName()}}
+{\footnotesize\ttfamily \label{class_u_toast_popup_m_v_v_m_view_model_base_a9b899ebf1fdf057111f1308a499ad539} 
+void UToast\+Popup\+MVVMView\+Model\+Base\+::\+Set\+Player\+Name (\begin{DoxyParamCaption}\item[{const FText \&}]{player\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Sets the player name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Name} & The new player name to set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_toast_popup_m_v_v_m_view_model_base_a62c0b9d284ee0e5702fad5baec86a166}\index{UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}!PlayerName@{PlayerName}}
+\index{PlayerName@{PlayerName}!UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}}
+\doxysubsubsection{\texorpdfstring{PlayerName}{PlayerName}}
+{\footnotesize\ttfamily \label{class_u_toast_popup_m_v_v_m_view_model_base_a62c0b9d284ee0e5702fad5baec86a166} 
+FText UToast\+Popup\+MVVMView\+Model\+Base\+::\+Player\+Name}
+
+
+
+The player name to display in the toast. 
+
+\Hypertarget{class_u_toast_popup_m_v_v_m_view_model_base_a0ae9b8a813b76c38f086da933e72dc49}\index{UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}!TriggerNotification@{TriggerNotification}}
+\index{TriggerNotification@{TriggerNotification}!UToastPopupMVVMViewModelBase@{UToastPopupMVVMViewModelBase}}
+\doxysubsubsection{\texorpdfstring{TriggerNotification}{TriggerNotification}}
+{\footnotesize\ttfamily \label{class_u_toast_popup_m_v_v_m_view_model_base_a0ae9b8a813b76c38f086da933e72dc49} 
+FTrigger\+Notification UToast\+Popup\+MVVMView\+Model\+Base\+::\+Trigger\+Notification}
+
+
+
+Delegate to trigger notifications in the UI. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_toast_popup_m_v_v_m_view_model_base_8h}{Toast\+Popup\+MVVMView\+Model\+Base.\+h}}\item 
+D\+:/\+UE\+\_\+\+Exercise/\+UMG\+\_\+\+Exercise\+\_\+\+Pratik\+Panzade/\+My\+Project/\+Source/\+My\+Project/\mbox{\hyperlink{_toast_popup_m_v_v_m_view_model_base_8cpp}{Toast\+Popup\+MVVMView\+Model\+Base.\+cpp}}\end{DoxyCompactItemize}

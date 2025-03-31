@@ -1,0 +1,8 @@
+<map id="UPlayerDataModel" name="UPlayerDataModel">
+<area shape="rect" id="Node000001" title="Manages player data and connection status using a DataTable." alt="" coords="5,172,137,199"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="31,5,100,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,47,73,171,68,172,64,47"/>
+<area shape="rect" id="Node000003" href="$class_u_game_event_manager.html" title="Manages game events and delegates for player data, UI, and toast notifications." alt="" coords="86,81,237,108"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="96,39,147,79,144,83,92,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,121,86,173,82,170,136,117"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="UMainGameInstanceSubsystem" name="UMainGameInstanceSubsystem">
+<area shape="rect" id="Node000001" title="Manages the game instance subsystem, including event management and player data." alt="" coords="130,263,340,289"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,172,188,199"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,205,217,260,214,264,128,210"/>
+<area shape="rect" id="Node000003" href="$class_u_game_event_manager.html" title="Manages game events and delegates for player data, UI, and toast notifications." alt="" coords="225,81,376,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,121,264,145,250,173,239,222,237,262,232,262,234,221,245,171,259,143,277,118"/>
+<area shape="rect" id="Node000005" href="$class_u_player_data_model.html" title="Manages player data and connection status using a DataTable." alt="" coords="347,172,478,199"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="300,123,303,136,308,146,326,162,348,172,345,177,323,166,304,150,297,137,295,124"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="322,5,391,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="340,46,312,83,308,79,336,43"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="373,44,390,80,404,130,413,171,408,172,399,132,385,82,368,47"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="375,208,262,264,259,260,372,204"/>
+</map>

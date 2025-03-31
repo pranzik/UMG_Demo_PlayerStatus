@@ -1,0 +1,14 @@
+<map id="D:/UE_Exercise/UMG_Exercise_PratikPanzade/MyProject/Source/MyProject/PlayerUIWidget.h" name="D:/UE_Exercise/UMG_Exercise_PratikPanzade/MyProject/Source/MyProject/PlayerUIWidget.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="72,5,264,80"/>
+<area shape="rect" id="Node000002" href="$_main_hud_8h.html" title=" " alt="" coords="5,251,198,325"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,92,76,109,63,129,55,159,58,191,67,222,81,249,76,252,63,224,52,192,50,159,58,127,71,106,89,88"/>
+<area shape="rect" id="Node000004" href="$_player_u_i_widget_8cpp.html" title=" " alt="" coords="72,128,264,203"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,96,171,128,166,128,166,96"/>
+<area shape="rect" id="Node000005" href="$_view_models_8h.html" title=" " alt="" coords="288,128,480,203"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="248,85,320,125,317,130,246,90"/>
+<area shape="rect" id="Node000003" href="$_main_hud_8cpp.html" title=" " alt="" coords="5,373,198,448"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,341,104,373,99,373,99,341"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="285,212,189,252,187,248,283,207"/>
+<area shape="rect" id="Node000006" href="$_view_models_8cpp.html" title=" " alt="" coords="288,251,480,325"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="387,219,387,250,382,250,382,219"/>
+</map>
