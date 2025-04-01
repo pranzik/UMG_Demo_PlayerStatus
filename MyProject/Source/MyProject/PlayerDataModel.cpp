@@ -199,43 +199,43 @@ void UPlayerDataModel::OnTimerExpire()
 
 
 
-void UPlayerDataModel::GetObjectReferenceByPath(const FString& AssetPath)
-{
-    // Get the AssetRegistry module
-    FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
-    IAssetRegistry& AssetRegistry = AssetRegistryModule.Get();
-
-    FAssetData AssetData = AssetRegistry.GetAssetByObjectPath(*AssetPath);
-
-    if (AssetData.IsValid())
-    {
-        UObject* Asset = AssetData.GetAsset();
-
-        if (Asset)
-        {
-            UE_LOG(LogTemp, Log, TEXT("Successfully found asset: %s"), *Asset->GetName());
-            PlayerDataTable = Cast<UDataTable>(Asset);
-            if (PlayerDataTable)
-            {
-                UE_LOG(LogTemp, Log, TEXT("Successfully found and cast asset: %s"), *PlayerDataTable->GetName());
-            }
-            else
-            {
-
-                FGenericPlatformMisc::RequestExit(false);
-                UE_LOG(LogTemp, Warning, TEXT("Asset found but could not be cast to UPlayerDataModel: %s"), *Asset->GetName());
-            }
-        }
-        else
-        {
-            UE_LOG(LogTemp, Warning, TEXT("Asset found but failed to load: %s"), *AssetPath);
-        }
-    }
-    else
-    {
-        UE_LOG(LogTemp, Error, TEXT("Asset not found at path: %s"), *AssetPath);
-    }
-}
+//void UPlayerDataModel::GetObjectReferenceByPath(const FString& AssetPath)
+//{
+//    // Get the AssetRegistry module
+//    FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
+//    IAssetRegistry& AssetRegistry = AssetRegistryModule.Get();
+//
+//    FAssetData AssetData = AssetRegistry.GetAssetByObjectPath(*AssetPath);
+//
+//    if (AssetData.IsValid())
+//    {
+//        UObject* Asset = AssetData.GetAsset();
+//
+//        if (Asset)
+//        {
+//            UE_LOG(LogTemp, Log, TEXT("Successfully found asset: %s"), *Asset->GetName());
+//            PlayerDataTable = Cast<UDataTable>(Asset);
+//            if (PlayerDataTable)
+//            {
+//                UE_LOG(LogTemp, Log, TEXT("Successfully found and cast asset: %s"), *PlayerDataTable->GetName());
+//            }
+//            else
+//            {
+//
+//                FGenericPlatformMisc::RequestExit(false);
+//                UE_LOG(LogTemp, Warning, TEXT("Asset found but could not be cast to UPlayerDataModel: %s"), *Asset->GetName());
+//            }
+//        }
+//        else
+//        {
+//            UE_LOG(LogTemp, Warning, TEXT("Asset found but failed to load: %s"), *AssetPath);
+//        }
+//    }
+//    else
+//    {
+//        UE_LOG(LogTemp, Error, TEXT("Asset not found at path: %s"), *AssetPath);
+//    }
+//}
 void UPlayerDataModel::UpdatePlayerConnectionStatus(const FPlayerData& Data) //TFunction<void()> CompletionCallback)
 {
     if (!PlayerDataTable)

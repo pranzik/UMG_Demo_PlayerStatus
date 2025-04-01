@@ -43,7 +43,7 @@ private:
      * @brief Initializes the player data model and event manager.
      */
     void InitializeModel();
-
+    void ConvertFromLatex();
     /**
      * @brief Determines whether the subsystem should be created.
      * @param Outer The outer object.

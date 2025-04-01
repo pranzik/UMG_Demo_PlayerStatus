@@ -44,7 +44,7 @@ public:
      * @brief Retrieves an object reference by its asset path.
      * @param AssetPath The path to the asset.
      */
-    void GetObjectReferenceByPath(const FString& AssetPath);
+   // void GetObjectReferenceByPath(const FString& AssetPath);
 
     /**
      * @brief Gets the connection status of a player by their nickname.
